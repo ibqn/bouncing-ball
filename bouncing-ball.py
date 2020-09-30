@@ -1,4 +1,4 @@
-import stddraw
+from pystdlib import stddraw
 
 # Draw a bouncing ball to standard draw.
 
