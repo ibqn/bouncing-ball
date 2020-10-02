@@ -1,1 +1,2 @@
 git+ssh://git@github.com/ibqn/pystdlib.git
+pygame
