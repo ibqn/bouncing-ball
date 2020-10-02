@@ -13,7 +13,15 @@ ry = .860
 vx = .015
 vy = .023
 
+stddraw.clear(stddraw.WHITE)
+
 while True:
+    stddraw.setPenColor(stddraw.WHITE)
+    stddraw.filledCircle(rx, ry, RADIUS)
+
+    stddraw.setPenColor(stddraw.BLACK)
+    stddraw.circle(rx, ry, RADIUS)
+
     # Update ball position and draw it there.
     if abs(rx + vx) + RADIUS > 1.0:
         vx = -vx
@@ -22,6 +30,5 @@ while True:
     rx = rx + vx
     ry = ry + vy
 
-    stddraw.clear(stddraw.WHITE)
     stddraw.filledCircle(rx, ry, RADIUS)
     stddraw.show(DT)
