@@ -25,4 +25,3 @@ while True:
     stddraw.clear(stddraw.WHITE)
     stddraw.filledCircle(rx, ry, RADIUS)
     stddraw.show(DT)
-    
